@@ -1,0 +1,12 @@
+/*2px vertical 2px horizontal */
+#h1{
+    text-shadow: 2px 2px;
+}
+/*with color */
+#h2{
+    text-shadow: 2px 2px red;
+}
+/* with 5px blur*/
+#h3{
+    text-shadow: 2px 2px 5px red;
+}
