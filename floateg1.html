@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-image: url("download.jfif");
+                
+               
+            }
+            .box{
+                float: left;
+                width: 33.33%;
+                padding: 50px;
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Grid of boxes</h3>
+        <p>boxes side by side</p>
+
+        <div class="clearfix">
+            <div class="box" style="background-color: #bbb;">
+            <p>SOme text inside the box</p>
+            </div>
+            <div class="box" style="background-color: #ccc;">
+            <p>Some text inside the box</p>
+            </div>
+            <div class="box" style="background-color: #ddd;">
+            <p>spme text inside the box</p>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    </body>
+
+</html>
