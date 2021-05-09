@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text]{
+                width: 130px;  
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background: url('searchicon.png');
+                background-position: 10px  10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                transition: width 1s ease-in-out;
+
+            }
+            #first:focus{
+                width: 100%;
+            }
+            #last:hover{
+                width: 100%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form >
+            <input type="text" name="search" id="first" placeholder="search...">
+            <br>
+            <br>
+            <input type="text" name="search" id="last" placeholder="search...">
+        </form>
+        
+    </body>
+    
+</html>

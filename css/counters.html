@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                counter-reset: section;
+            }
+            h2::before {
+                counter-increment: section;
+                content: "section "counter(section) " : ";
+            }
+        </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1>Counters</h1>
+            <h2>HTML tutorial</h2>
+            <h2>CSS tutorial</h2>
+            <h2>Jaavascript Tutorial</h2>
+        </hgroup>
+
+    </body>
+</html>

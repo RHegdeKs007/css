@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding: 70px;
+  border: 3px solid #ee730ea4;
+}
+/*without border box*/
+
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+/*with border box*/
+/*
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+} */
+</style>
+</head>
+<body>
+
+<h2>CSS Padding</h2>
+<div>This element has a padding of 70px.</div>
+<br>
+<br>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div is 350px,
+    even though it is defined as 300px in the CSS.</div>
+</body>
+</html>
