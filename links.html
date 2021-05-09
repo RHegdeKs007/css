@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links</title>
+
+        <link rel="stylesheet" href="links.css">
+
+        <style>
+            #a1:link{
+                color: crimson;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-decoration: wavy;
+            }
+
+            #a1:hover{
+                color: darkgoldenrod;
+                text-decoration: underline;
+            }
+            .a:link, a:visited{
+                color: rebeccapurple;
+                text-decoration: none;
+                background-color: burlywood;
+                padding: 12px 24px;
+                text-align: center;
+            }
+            
+            
+            .a:hover{
+                color: seagreen;
+                text-decoration:underline;
+                background-color: coral;
+
+            }
+            .a:active{
+                color: blue;
+                text-decoration: wavy;
+                background-color:darkgoldenrod;
+            }
+        </style>
+    </head>
+    <body >
+      <b><a id="a1" href="#" target="_blank">This is a link</a></b>
+      <br>
+      <br>
+      <br>
+      <b><a class="b" href="default.asp" target="_blank">This is a link</a></b>
+     
+      <br>
+      <br>
+      <br>
+      <b><a class="a" href="default.asp" target="_blank">This is another link</a></b>  
+     
+    </body>
+</html>
