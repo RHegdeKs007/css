@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root{
+                --blue: #1e90ff;
+                --red: #ff2312;
+                --white: #fff;
+            }
+            body{
+                background-color: var(--red);
+            }
+            h2{
+                border-bottom: var(--blue);
+            }
+            .container{
+                background-color: var(--white) ;
+                color: var(--blue);
+                padding: 20px;
+            }
+            .container button{
+                background-color: var(--red);
+                color: var(--white);
+                border: 2px solid var(--blue);
+                padding: 8px;
+            }
+            .one{
+                background-color: var(--blue);
+                color: var(--white);
+            }
+            .one:hover{
+                background-color: var(--red);
+                
+            }
+            ::selection{
+                background-color: yellow;
+                color: red;
+            }
+        </style>
+        <script>
+            //Get the root element
+            var r= document.querySelector(':root');
+
+            //create a function for getting a variable value
+            function myfunction_get(){
+                //Get the styles (properties and values) for the root
+                var rs= getComputedStyle(r);
+                //Alert the value of --red variable
+                alert("The value of --red is : " + rs.getPropertyValue('--red'));
+            }
+            //create a function for setting a variable value
+            function myfunction_set() {
+                //set the value of the variable --red to another value(in this case salmon)
+                r.style.setProperty('--red','salmon');
+            }
+        </script>
+    </head>
+    <body>
+        <hgroup><h1><h1>Get and Change CSS Variable With JavaScript</h1></h1></hgroup>
+        <div class="container">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p>
+              <button>Yes</button>
+              <button>No</button>
+            </p>
+          </div>
+          <br>
+          <button class="one" type="button" onclick="myfunction_get()">Get CSS variable with JavaScript</button>
+
+          <button class=" one" type="button" onclick="myfunction_set()">Change CSS variable with Javascript</button>
+    </body>
+</html>
